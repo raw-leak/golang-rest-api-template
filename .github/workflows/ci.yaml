@@ -17,10 +17,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: "1.21.3" # Make sure this version exists
-
-      - name: Check Go version
-        run: go version
+          go-version: "1.21.3"
 
       - name: Lint (golangci-lint)
         uses: golangci/golangci-lint-action@v3

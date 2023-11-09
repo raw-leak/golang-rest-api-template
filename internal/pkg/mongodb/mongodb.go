@@ -18,11 +18,9 @@ type MongoDB struct {
 func (m *MongoDB) Disconnect(ctx context.Context) {
 	log.Println("Disconnecting MongoDB...")
 
-	m.Client.Disconnect(ctx)
-
-	// if err := m.Client.Disconnect(ctx); err != nil {
-	// 	log.Printf("Failed to disconnect from MongoDB: %v\n", err)
-	// }
+	if err := m.Client.Disconnect(ctx); err != nil {
+		log.Printf("Failed to disconnect from MongoDB: %v\n", err)
+	}
 	log.Println("MongoDB disconnected")
 }
 

@@ -25,33 +25,45 @@
 
 Briefly introduce your Golang REST API project here. Provide context about what problem it solves and why it's valuable.
 
-## Features
-
-- List key features and functionalities of your API.
-
 ## Table of Contents
 
-- [Installation](#installation)
+- [Features](#features)
 - [Usage](#usage)
-- [API Documentation](#api-documentation)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [Solution notes](#solution-notes)
 - [License](#license)
 
-## Installation
+## Features
 
-Provide instructions on how to install your Golang REST API. Include any prerequisites and steps to set up the environment.
+- 🔱 Clean architecture (handler->service->repository)
+- 📖 Standard Go project layout
+- 💿 CI/CD with GitHub Actions
+- 🐳 Docker compose 
+- ⚙️ Makefile 
+- 🗃️ MongoDB connection
+- ✔️ Unit/E2E tests with mocks and testify
+- 🚦 Graceful shutdown
 
-```bash
-# Example installation steps
-$ git clone https://github.com/yourusername/your-api.git
-$ cd your-api
-$ go build
-$ ./your-api
-```
+## Prerequisites
+
+Before you can run this project, make sure you have the following prerequisites installed:
+
+1. **Go 1.21+**: You'll need Go 1.21 or a later version installed. You can download and install Go from the official website: [https://golang.org/dl/](https://golang.org/dl/)
+
+2. **MongoDB**: You'll need a MongoDB server running locally or accessible from your development environment. You can download and install MongoDB from the official website: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+
+3. **Make**: Make sure you have Makefile installed. Most Unix-like systems have it pre-installed. For Windows, you can use tools like [Make for Windows](http://gnuwin32.sourceforge.net/packages/make.htm).
+
+OR
+
+- **Docker**: If you prefer a containerized environment that includes MongoDB, you can use Docker. You can download and install Docker from the official website: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+
+   Additionally, this project includes a Docker Compose file that sets up the necessary services, including MongoDB, to run the application. Make sure you have Docker Compose installed as well: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+
+Once you have these prerequisites in place, you can proceed with setting up and running the project.
 
 ## Usage
+
+TODO
 
 Explain how to use your API. Include code examples, endpoints, and any required parameters.
 
@@ -60,11 +72,9 @@ Explain how to use your API. Include code examples, endpoints, and any required 
 $ curl -X GET http://localhost:8080/api/endpoint
 ```
 
-## API Documentation
-
-Provide a link to detailed API documentation, if available.
-
 ## Configuration
+
+TODO
 
 Explain how to configure your API, including environment variables, configuration files, or any other relevant settings.
 
@@ -73,18 +83,6 @@ Explain how to configure your API, including environment variables, configuratio
 $ export API_KEY=your-api-key
 $ ./your-api
 ```
-
-## Contributing
-
-Tell others how they can contribute to your project. Include guidelines for submitting issues or pull requests.
-
-## Solution notes
-
-- :trident: clean architecture (handler->service->repository)
-- :book: standard Go project layout
-- :cd: github CI/CD + docker compose + Makefile included
-- :card_file_box: MongoDB connection included
-- :white_check_mark: tests with mocks included
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
